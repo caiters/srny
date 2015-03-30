@@ -30,6 +30,9 @@
 	<link rel="apple-touch-icon" href="<?php echo bloginfo('template_directory'); ?>/apple-touch-icon-precomposed.png"/>
 <!-- The little things -->
 
+<!-- fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:700,400|Old+Standard+TT' rel='stylesheet' type='text/css'>
+
 <!-- Stylesheets -->
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <!-- Stylesheets -->
@@ -49,7 +52,7 @@
 			<?php bloginfo( 'description' ); ?>
         </p>
         <nav role="navigation">
-            <?php $args = array( 'menu' => 'mainnav', 'container' => false, 'menu_id' => false, 'menu_class' => false); wp_nav_menu($args); ?>
+            <?php $args = array( 'menu' => 'mainnav', 'container' => false, 'menu_id' => false, 'menu_class' => 'main-menu'); wp_nav_menu($args); ?>
         </nav>
         <?php // get_search_form(); ?>
     </header>

@@ -10,11 +10,20 @@
 
 /* base styles */
 
-body { background: #fff; padding: 0; margin: 0; }
+body { background: #fff; padding: 0; margin: 0; font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Old Standard TT', serif; }
 
 .main-header { background: #fff none; text-align: center; }
 
-
+.main-menu { font-family: 'Open Sans Condensed', sans-serif; text-transform: uppercase;
+	a { color: #fff; text-decoration: none;
+		&:hover { text-decoration: underline; }
+	}
+	li.current_page_item {
+		a { text-decoration: underline; }
+	}
+}
 
 .logo { display: block;
 	span { height:0;padding-bottom: 30.58%; width: 100%; display: block; text-indent: -9999px; background: transparent url('images/srny.png') left top no-repeat; background-size: cover; }
@@ -24,4 +33,3 @@ body { background: #fff; padding: 0; margin: 0; }
 	.main-header { background-image: url('images/banner.jpg'); background-size: cover; }
 	.logo { display: inline-block; max-width: 100%; width: 484px; }
 }
- 

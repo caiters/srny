@@ -33,4 +33,4 @@ gulp.task('watch', function() {
 });
 
 // default task
-gulp.task('default', ['upload', 'less', 'watch']);
+gulp.task('default', ['less', 'upload', 'watch']);

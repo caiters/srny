@@ -12,10 +12,33 @@ body {
   background: #fff;
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Old Standard TT', serif;
 }
 .main-header {
   background: #fff none;
   text-align: center;
+}
+.main-menu {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+}
+.main-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+.main-menu a:hover {
+  text-decoration: underline;
+}
+.main-menu li.current_page_item a {
+  text-decoration: underline;
 }
 .logo {
   display: block;
