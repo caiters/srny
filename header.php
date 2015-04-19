@@ -32,6 +32,7 @@
 
 <!-- fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:700,400|Old+Standard+TT' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <!-- Stylesheets -->
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
@@ -46,13 +47,12 @@
 </head>
 
 <body <?php body_class(); ?> id="top">
-    <header class="main-header" role="banner">
+    <header class="main-header group" role="banner">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo"><span><?php bloginfo( 'name' ); ?></span></a>
-        <p class="desc">
-			<?php bloginfo( 'description' ); ?>
-        </p>
         <nav role="navigation">
-            <?php $args = array( 'menu' => 'mainnav', 'container' => false, 'menu_id' => false, 'menu_class' => 'main-menu'); wp_nav_menu($args); ?>
+						<a class="btn btn-solid show-nav" id="showNav" href="#">Menu</a>
+            <?php $args = array( 'container' => false, 'menu_id' => false, 'menu_class' => 'main-menu', 'theme_location' => 'header-menu'); wp_nav_menu($args); ?>
         </nav>
         <?php // get_search_form(); ?>
     </header>
+		<div class="content-wrapper max-container group">
